@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Public_Sans } from "next/font/google";
 import "./globals.css";
+import Header from "./header";
+import Footer from "./footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const publicSans = Public_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +21,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={publicSans.className}>
+        <div className="mx-auto max-w-screen-xl ">
+          <Header />
+          {children}
+          <Footer />
+        </div>
+      </body>
     </html>
   );
 }
