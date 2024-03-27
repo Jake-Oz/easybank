@@ -10,7 +10,7 @@ const Header: React.FC = () => {
       <Link href="/" className="h-5 cursor-pointer">
         <Image src="./logo.svg" alt="Easybank Logo" width={139} height={20} />
       </Link>
-      <nav className="hidden h-6 text-neutral-grayishBlue lg:block">
+      <nav className="hidden h-5 text-neutral-grayishBlue lg:block">
         <ul className="flex h-16 w-full items-center justify-between gap-10 border-b-4 border-[transparent] ">
           <li className="hover:bg-gradient-to-r h-16 from-primary-limeGreen to-primary-brightCyan hover:bg-[length:100%_4px] hover:bg-bottom hover:bg-no-repeat hover:text-primary-darkBlue ">
             <Link href="/">Home</Link>
